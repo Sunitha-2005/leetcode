@@ -5,13 +5,11 @@ class Solution {
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
                 if(colors[i]!=colors[j]){
-                    int diff=Math.abs(j-i);
-
+                    int diff=j-i;
                     max=Math.max(max,diff);
-
                 }
             }
         }
-        return max;
+         return max;
     }
 }
